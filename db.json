@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "name": "Applet",
+      "category": "Fruits",
+      "date": "2023-05-01T04:00:00.000Z",
+      "freshness": "Brand New",
+      "price": 1000,
+      "comment": "applet fruits",
+      "id": 1
+    },
+    {
+      "name": "pineapplet",
+      "category": "Fruits",
+      "date": "2023-05-01T04:00:00.000Z",
+      "freshness": "Brand New",
+      "price": 1500,
+      "comment": "very pineapplet",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

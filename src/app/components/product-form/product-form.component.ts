@@ -1,6 +1,13 @@
+// core
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+
+// material
+import { MatDialogRef } from '@angular/material/dialog';
+
+// core app
 import { ProductI } from 'src/app/model/product';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-product-form',
@@ -13,7 +20,7 @@ export class ProductFormComponent implements OnInit {
   public form!: FormGroup;
 
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private _service: ProductService, private _dialogRef: MatDialogRef<ProductFormComponent>) { }
 
   buildingForm(){
     this.form = this.fb.group({
@@ -27,7 +34,16 @@ export class ProductFormComponent implements OnInit {
   }
 
   addProduct(product: ProductI){
-    console.log(product);
+    this._service.create(product).subscribe(
+      res => {
+        alert("Product added successfully.");
+        this.form.reset();
+        this._dialogRef.close("save");
+      },
+      err =>{
+        alert("Error while adding the product.");
+      }
+    );
   }
 
   ngOnInit(): void {

@@ -11,9 +11,12 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
-import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+
 
 const MATERIAL = [
   MatToolbarModule,
@@ -24,6 +27,7 @@ const MATERIAL = [
   MatInputModule,
   MatSelectModule,
   MatDatepickerModule,
+  MatNativeDateModule,
   MatCheckboxModule,
   MatRadioModule
 ]

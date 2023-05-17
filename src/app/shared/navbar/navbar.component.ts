@@ -5,6 +5,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 
+
+import { MatDialog } from '@angular/material/dialog';
+import { ProductFormComponent } from 'src/app/components/product-form/product-form.component';
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -14,7 +18,15 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(ProductFormComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 
   ngOnInit(): void {
   }

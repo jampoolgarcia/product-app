@@ -9,10 +9,12 @@ import { AppComponent } from './app.component';
 
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProductFormComponent,
   ],
   imports: [
     BrowserModule,

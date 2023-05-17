@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Form Product</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="outline">
+    <mat-label>Product Name</mat-label>
+    <input matInput placeholder="Enter product name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Product Category</mat-label>
+    <mat-select placeholder="Select Category">
+      <mat-option value="Fruits">Fruits</mat-option>
+      <mat-option value="Vegetable">Vegetable</mat-option>
+      <mat-option value="Electronic">Electronic</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  
+  <label for=""><h1>Product Freshness</h1></label>
+  <mat-radio-group >
+    <mat-radio-button *ngFor="let fresh of freshnessList" [value]="fresh">{{ fresh }}</mat-radio-button>
+  </mat-radio-group>
+</div>

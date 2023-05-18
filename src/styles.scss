@@ -6,3 +6,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .m-2{
   margin: 0.5rem;
 }
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+// td, th {
+//   width: 25%;
+// }

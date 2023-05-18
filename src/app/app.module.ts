@@ -13,11 +13,13 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductFormComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,

@@ -20,13 +20,6 @@ export class NavbarComponent implements OnInit {
 
   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
-    const dialogRef = this.dialog.open(ProductFormComponent);
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
 
   ngOnInit(): void {
   }

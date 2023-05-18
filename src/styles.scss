@@ -25,6 +25,27 @@ table {
   width: 100%;
 }
 
+.spacer {
+  flex: 1 1 auto;
+}
+
+.d-inline {
+  display: inline !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-around {
+  justify-content: space-around !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+
 // td, th {
 //   width: 25%;
 // }

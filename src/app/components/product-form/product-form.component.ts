@@ -1,9 +1,9 @@
 // core
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 // material
-import { MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 // core app
 import { ProductI } from 'src/app/model/product';
@@ -18,9 +18,12 @@ export class ProductFormComponent implements OnInit {
 
   public freshnessList = ["Brand New", "Second Hand", "Refurbished"];
   public form!: FormGroup;
+  public action = "save";
 
-
-  constructor(private fb: FormBuilder, private _service: ProductService, private _dialogRef: MatDialogRef<ProductFormComponent>) { }
+  constructor(private fb: FormBuilder, 
+    private _service: ProductService, 
+    @Inject(MAT_DIALOG_DATA) public editData: ProductI,
+    private _dialogRef: MatDialogRef<ProductFormComponent>) { }
 
   buildingForm(){
     this.form = this.fb.group({
@@ -34,6 +37,14 @@ export class ProductFormComponent implements OnInit {
   }
 
   addProduct(product: ProductI){
+    if(!this.editData){
+      this.create(product);
+    }else{
+      this.update(product);
+    }
+  }
+
+  private create(product: ProductI){
     this._service.create(product).subscribe(
       res => {
         alert("Product added successfully.");
@@ -46,8 +57,26 @@ export class ProductFormComponent implements OnInit {
     );
   }
 
+  private update(product: ProductI){
+    this._service.update(product, this.editData.id!).subscribe(
+      res => {
+        alert("Product updated successfully.");
+        this.form.reset();
+        this._dialogRef.close("update");
+      },
+      err =>{
+        alert("Error while updating the product.");
+      }
+    );
+  }
+
   ngOnInit(): void {
     this.buildingForm();
+
+    if(this.editData) {
+      this.action = 'update';
+      this.form.patchValue(this.editData);
+    }
   }
 
 }

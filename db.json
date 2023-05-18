@@ -3,20 +3,29 @@
     {
       "name": "Applet",
       "category": "Fruits",
-      "date": "2023-05-01T04:00:00.000Z",
-      "freshness": "Brand New",
+      "date": "2023-04-04T04:00:00.000Z",
+      "freshness": "Second Hand",
       "price": 1000,
-      "comment": "applet fruits",
+      "comment": "applet fruits hand",
       "id": 1
     },
     {
-      "name": "pineapplet",
-      "category": "Fruits",
-      "date": "2023-05-01T04:00:00.000Z",
-      "freshness": "Brand New",
-      "price": 1500,
-      "comment": "very pineapplet",
+      "name": "patata",
+      "category": "Vegetable",
+      "date": "2023-04-04T04:00:00.000Z",
+      "freshness": "Second Hand",
+      "price": 500,
+      "comment": "patata very good",
       "id": 2
+    },
+    {
+      "name": "laptop",
+      "category": "Electronic",
+      "date": "2017-02-18T03:00:00.000Z",
+      "freshness": "Brand New",
+      "price": 200000,
+      "comment": "last notebook",
+      "id": 3
     }
   ],
   "comments": [

@@ -16,8 +16,16 @@ export class ProductService {
     return this._http.post<ProductI>(this.url, record);
   }
 
-  getAll(){
+  update(record: ProductI, id: number){
+    return this._http.put<ProductI>(`${this.url}/${id}`, record);
+  }
+
+  findAll(){
     return this._http.get<ProductI[]>(this.url);
+  }
+
+  delete(id: number){
+    return this._http.delete<ProductI[]>(`${this.url}/${id}`);
   }
 
 

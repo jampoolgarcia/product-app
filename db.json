@@ -1,32 +1,205 @@
 {
   "productList": [
-    {
-      "name": "Applet",
-      "category": "Fruits",
-      "date": "2023-04-04T04:00:00.000Z",
-      "freshness": "Second Hand",
-      "price": 1000,
-      "comment": "applet fruits hand",
-      "id": 1
-    },
-    {
-      "name": "patata",
-      "category": "Vegetable",
-      "date": "2023-04-04T04:00:00.000Z",
-      "freshness": "Second Hand",
-      "price": 500,
-      "comment": "patata very good",
-      "id": 2
-    },
-    {
-      "name": "laptop",
-      "category": "Electronic",
-      "date": "2017-02-18T03:00:00.000Z",
-      "freshness": "Brand New",
-      "price": 200000,
-      "comment": "last notebook",
-      "id": 3
-    }
+      {
+        "id": 1,
+        "name": "Product A",
+        "category": "Category A",
+        "date": "2023-05-01",
+        "freshness": "Fresh",
+        "price": 10.99,
+        "comment": "This is a great product!"
+      },
+      {
+        "id": 2,
+        "name": "Product B",
+        "category": "Category B",
+        "date": "2023-04-20",
+        "freshness": "Stale",
+        "price": 5.99,
+        "comment": "Not satisfied with this product."
+      },
+      {
+        "id": 3,
+        "name": "Product C",
+        "category": "Category A",
+        "date": "2023-05-10",
+        "freshness": "Fresh",
+        "price": 8.99,
+        "comment": "Highly recommended!"
+      },
+      {
+        "id": 4,
+        "name": "Product D",
+        "category": "Category B",
+        "date": "2023-04-25",
+        "freshness": "Stale",
+        "price": 6.49,
+        "comment": "Average product, nothing special."
+      },
+      {
+        "id": 5,
+        "name": "Product E",
+        "category": "Category C",
+        "date": "2023-05-05",
+        "freshness": "Fresh",
+        "price": 12.99,
+        "comment": "Excellent quality!"
+      },
+      {
+        "id": 6,
+        "name": "Product F",
+        "category": "Category A",
+        "date": "2023-05-15",
+        "freshness": "Fresh",
+        "price": 9.99,
+        "comment": "Great value for the price."
+      },
+      {
+        "id": 7,
+        "name": "Product G",
+        "category": "Category B",
+        "date": "2023-04-30",
+        "freshness": "Stale",
+        "price": 7.99,
+        "comment": "Could be better."
+      },
+      {
+        "id": 8,
+        "name": "Product H",
+        "category": "Category C",
+        "date": "2023-05-08",
+        "freshness": "Fresh",
+        "price": 11.49,
+        "comment": "Impressive product!"
+      },
+      {
+        "id": 9,
+        "name": "Product I",
+        "category": "Category A",
+        "date": "2023-05-17",
+        "freshness": "Fresh",
+        "price": 10.49,
+        "comment": "Worth every penny."
+      },
+      {
+        "id": 10,
+        "name": "Product J",
+        "category": "Category B",
+        "date": "2023-05-03",
+        "freshness": "Stale",
+        "price": 8.49,
+        "comment": "Not the best choice."
+      },
+      {
+        "id": 11,
+        "name": "Product K",
+        "category": "Category C",
+        "date": "2023-05-14",
+        "freshness": "Fresh",
+        "price": 9.99,
+        "comment": "Satisfied with this product."
+      },
+      {
+        "id": 12,
+        "name": "Product L",
+        "category": "Category A",
+        "date": "2023-04-29",
+        "freshness": "Stale",
+        "price": 6.99,
+        "comment": "Could be improved."
+      },
+      {
+        "id": 13,
+        "name": "Product M",
+        "category": "Category B",
+        "date": "2023-05-06",
+        "freshness": "Fresh",
+        "price": 11.99,
+        "comment": "Best product ever!"
+      },
+      {
+        "id": 14,
+        "name": "Product N",
+        "category": "Category C",
+        "date": "2023-05-16",
+        "freshness": "Fresh",
+        "price": 13.99,
+        "comment": "Highly recommended!"
+      },
+      {
+        "id": 15,
+        "name": "Product O",
+        "category": "Category A",
+        "date": "2023-04-24",
+        "freshness": "Stale",
+        "price": 7.49,
+        "comment": "Not worth the price."
+      },
+      {
+        "id": 16,
+        "name": "Product P",
+        "category": "Category B",
+        "date": "2023-05-12",
+        "freshness": "Fresh",
+        "price": 10.49,
+        "comment": "Good product overall."
+      },
+      {
+        "id": 17,
+        "name": "Product Q",
+        "category": "Category C",
+        "date": "2023-05-02",
+        "freshness": "Fresh",
+        "price": 9.99,
+        "comment": "I recommend this product."
+      },
+      {
+        "id": 18,
+        "name": "Product R",
+        "category": "Category A",
+        "date": "2023-05-11",
+        "freshness": "Stale",
+        "price": 7.99,
+        "comment": "Could be better."
+      },
+      {
+        "id": 19,
+        "name": "Product S",
+        "category": "Category B",
+        "date": "2023-04-27",
+        "freshness": "Stale",
+        "price": 5.99,
+        "comment": "Not satisfied with this product."
+      },
+      {
+        "id": 20,
+        "name": "Product T",
+        "category": "Category C",
+        "date": "2023-05-09",
+        "freshness": "Fresh",
+        "price": 10.99,
+        "comment": "Great value for the price."
+      },
+      {
+        "id": 21,
+        "name": "Product U",
+        "category": "Category A",
+        "date": "2023-04-26",
+        "freshness": "Stale",
+        "price": 7.49,
+        "comment": "Average product, nothing special."
+      },
+      {
+        "id": 22,
+        "name": "Product V",
+        "category": "Category B",
+        "date": "2023-05-07",
+        "freshness": "Fresh",
+        "price": 12.99,
+        "comment": "Excellent quality!"
+      }
+    
+    
   ],
   "comments": [
     {
